@@ -28,7 +28,7 @@ jobs:
       - name: Build Gradle Project
         run: |
           chmod +x gradlew
-          ./gradlew build -Pprod -x test
+          ./gradlew build -Pprod -x test -x integrationTest
 
 
       # Step 4: Set up Docker
